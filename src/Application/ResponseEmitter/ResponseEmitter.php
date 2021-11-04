@@ -16,7 +16,6 @@ class ResponseEmitter extends SlimResponseEmitter
         $allowedOrigins = ['http://localhost:8080', 'https://gearsdigital.github.io'];
 
         if (isset($_SERVER['HTTP_ORIGIN']) && in_array($_SERVER['HTTP_ORIGIN'], $allowedOrigins)) {
-
             $response = $response
                 ->withHeader('Access-Control-Allow-Credentials', 'true')
                 ->withHeader('Access-Control-Allow-Origin', $_SERVER['HTTP_ORIGIN'])
