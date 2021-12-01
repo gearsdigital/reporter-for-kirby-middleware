@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5d84a1fc6d4813776a53e843713755d",
+    "content-hash": "f8be721c5e10df046775acc93d984b41",
     "packages": [
         {
             "name": "fig/http-message-util",
@@ -64,16 +64,16 @@
         },
         {
             "name": "gearsdigital/kirby-reporter",
-            "version": "v3.0.1",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/gearsdigital/kirby-reporter.git",
-                "reference": "7939f94fd85b401c23a5c0b7790e0f2f7187eeab"
+                "url": "https://github.com/gearsdigital/reporter-for-kirby.git",
+                "reference": "f1b927b3bded5937cf921c0d17e5027307ae421a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gearsdigital/kirby-reporter/zipball/7939f94fd85b401c23a5c0b7790e0f2f7187eeab",
-                "reference": "7939f94fd85b401c23a5c0b7790e0f2f7187eeab",
+                "url": "https://api.github.com/repos/gearsdigital/reporter-for-kirby/zipball/f1b927b3bded5937cf921c0d17e5027307ae421a",
+                "reference": "f1b927b3bded5937cf921c0d17e5027307ae421a",
                 "shasum": ""
             },
             "require": {
@@ -83,9 +83,14 @@
                 "ql/uri-template": "^1.1"
             },
             "require-dev": {
+                "getkirby/cms": "3.6.0-rc.4",
+                "mockery/mockery": "^1.4",
                 "phpunit/phpunit": "^9.5.10"
             },
             "type": "kirby-plugin",
+            "extra": {
+                "kirby-cms-path": "vendor/getkirby/kirby"
+            },
             "autoload": {
                 "psr-4": {
                     "KirbyReporter\\": "lib/"
@@ -101,12 +106,13 @@
                     "email": "steffen.giers@gmail.com"
                 }
             ],
-            "description": "Report issues with ease.",
+            "description": "Gather feedback directly out of the Panel! Enable your editors or clients to submit tasks, bugs and ideas either straight to your issue tracker or by E-Mail.",
             "support": {
-                "issues": "https://github.com/gearsdigital/kirby-reporter/issues",
-                "source": "https://github.com/gearsdigital/kirby-reporter/tree/v3.0.1"
+                "issues": "https://github.com/gearsdigital/reporter-for-kirby/issues",
+                "source": "https://github.com/gearsdigital/reporter-for-kirby/tree/v4.1.1"
             },
-            "time": "2021-10-31T21:13:59+00:00"
+            "abandoned": "gearsdigital/reporter-for-kirby",
+            "time": "2021-11-11T15:44:29+00:00"
         },
         {
             "name": "getkirby/composer-installer",
@@ -1664,16 +1670,16 @@
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "v2.4.0",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "5f38c8804a9e97d23e0c8d63341088cd8a22d627"
+                "reference": "6f981ee24cf69ee7ce9736146d1c57c2780598a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/5f38c8804a9e97d23e0c8d63341088cd8a22d627",
-                "reference": "5f38c8804a9e97d23e0c8d63341088cd8a22d627",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/6f981ee24cf69ee7ce9736146d1c57c2780598a8",
+                "reference": "6f981ee24cf69ee7ce9736146d1c57c2780598a8",
                 "shasum": ""
             },
             "require": {
@@ -1682,7 +1688,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "2.4-dev"
+                    "dev-main": "2.5-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -1711,7 +1717,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/v2.4.0"
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v2.5.0"
             },
             "funding": [
                 {
@@ -1727,7 +1733,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-23T23:28:01+00:00"
+            "time": "2021-07-12T14:48:14+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -4358,7 +4364,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.3 || ^8.0",
+        "php": "^8.0",
         "ext-json": "*"
     },
     "platform-dev": [],
